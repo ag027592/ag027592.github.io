@@ -599,15 +599,27 @@ a:hover {
 
 .timeline .role {
   display: flex;
-  align-items: flex-start;
-  gap: 0.85rem;
+  align-items: center;
+  gap: 0.95rem;
 }
 
 .org-logo {
-  width: 2.75rem;
-  height: 2.75rem;
+  width: 3.1rem;
+  height: 3.1rem;
   flex-shrink: 0;
-  border-radius: 0.55rem;
+  object-fit: contain;
+  border-radius: 0.5rem;
+  padding: 0.2rem;
+  box-sizing: border-box;
+  border: 1px solid var(--line);
+}
+
+.org-logo--light {
+  background: #ffffff;
+}
+
+.org-logo--dark {
+  background: #0c0c0e;
 }
 
 .timeline {
