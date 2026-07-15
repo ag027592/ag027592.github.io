@@ -4,9 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Huang-Cheng Chou | Speech & Behavioral Signal Processing</title>
-  <meta name="description" content="Postdoctoral Scholar at USC SAIL. Speech emotion recognition, multimodal understanding, and expressive voice AI." />
+  <meta name="description" content="Postdoctoral Scholar–NSTC Fellow at USC SAIL. Speech emotion recognition, subjective evaluation, multilingual speech, and voice-assistant AI." />
   <meta name="author" content="Huang-Cheng Chou" />
   <link rel="canonical" href="https://huangchengchou.com/" />
+  <meta property="og:title" content="Huang-Cheng Chou" />
+  <meta property="og:description" content="Speech emotion recognition, multimodal understanding, and voice-assistant AI at USC SAIL." />
+  <meta property="og:url" content="https://huangchengchou.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://huangchengchou.com/assets/portrait.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet" />
@@ -19,6 +24,7 @@
     <a class="logo" href="#top">HC Chou</a>
     <nav class="nav" aria-label="Primary">
       <a href="#about">About</a>
+      <a href="#news">News</a>
       <a href="#work">Work</a>
       <a href="#pubs">Publications</a>
       <a href="#contact">Contact</a>
@@ -26,48 +32,116 @@
   </header>
 
   <main id="top">
-    <!-- HERO: brand + one headline + one sentence + CTAs + full-bleed visual -->
     <section class="hero" aria-label="Introduction">
       <canvas id="wave" class="hero-visual" aria-hidden="true"></canvas>
       <div class="hero-veil" aria-hidden="true"></div>
-      <div class="hero-content">
-        <p class="eyebrow">USC SAIL &middot; NSTC Fellow</p>
-        <h1 class="brand">Huang-Cheng Chou</h1>
-        <p class="lede">
-          Building speech systems that hear emotion as carefully as they hear words—
-          for voice assistants, spoken dialogue, and human-centered AI.
-        </p>
-        <div class="cta-row">
-          <a class="btn btn-primary" href="assets/Huang-Cheng_Chou_CV.pdf" target="_blank" rel="noopener">Download CV</a>
-          <a class="btn btn-ghost" href="https://scholar.google.com/citations?user=_d7pcs4AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
-          <a class="btn btn-ghost" href="#contact">Contact</a>
+      <div class="hero-layout">
+        <div class="hero-content">
+          <p class="eyebrow">USC SAIL · NSTC Fellow</p>
+          <h1 class="brand">Huang-Cheng Chou</h1>
+          <p class="brand-zh" lang="zh-Hant">周煌展</p>
+          <p class="lede">
+            Speech / multimodal researcher for voice assistants—
+            speech emotion recognition, subjective evaluation, and systems that hear affect as carefully as words.
+          </p>
+          <div class="link-row" aria-label="Quick links">
+            <a href="assets/Huang-Cheng_Chou_CV.pdf" target="_blank" rel="noopener">CV</a>
+            <span aria-hidden="true">·</span>
+            <a href="https://scholar.google.com/citations?user=_d7pcs4AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+            <span aria-hidden="true">·</span>
+            <a href="https://github.com/ag027592" target="_blank" rel="noopener">GitHub</a>
+            <span aria-hidden="true">·</span>
+            <a href="https://www.linkedin.com/in/huangchougchou/" target="_blank" rel="noopener">LinkedIn</a>
+            <span aria-hidden="true">·</span>
+            <a href="mailto:huangchengchou@gmail.com">Email</a>
+          </div>
         </div>
+        <figure class="hero-photo">
+          <img
+            src="assets/portrait.jpg"
+            alt="Huang-Cheng Chou with colleagues at USC SAIL"
+            width="900"
+            height="1154"
+            loading="eager"
+            decoding="async"
+          />
+        </figure>
       </div>
-      <div class="hero-scroll" aria-hidden="true">
-        <span>Scroll</span>
-      </div>
+      <div class="hero-scroll" aria-hidden="true"><span>Scroll</span></div>
     </section>
 
     <section id="about" class="section about">
       <div class="section-inner">
         <h2>About</h2>
         <p class="section-lead">
-          Hello—I’m Huang-Cheng (David) Chou, a Postdoctoral Scholar–NSTC Fellow at the
+          I am a Postdoctoral Scholar–NSTC Fellow at the
           <a href="https://sail.usc.edu/" target="_blank" rel="noopener">Signal Analysis and Interpretation Laboratory (SAIL)</a>
-          led by Prof. Shrikanth S. Narayanan at the University of Southern California.
+          at the University of Southern California, working with Prof. Shrikanth S. Narayanan.
+          I received my Ph.D. in Electrical Engineering from National Tsing Hua University, advised by Prof. Chi-Chun Lee.
         </p>
         <p>
-          I earned my Ph.D. in Electrical Engineering from National Tsing Hua University under Prof. Chi-Chun Lee,
-          specializing in affective computing, speech, and behavioral signal processing.
-          My research focuses on speech emotion recognition and multimodal understanding and perception,
-          with collaborations across the Speech Processing and Machine Learning Lab (Prof. Hung-yi Lee)
-          and the Multimodal Signal Processing Laboratory (Prof. Carlos Busso).
+          My research has two main threads: (1) <strong>speech emotion recognition under subjectivity and ambiguity</strong>,
+          including multi-label learning, annotator disagreement, calibration, fairness, and open evaluation through
+          <a href="https://emosuperb.github.io/" target="_blank" rel="noopener">EMO-SUPERB</a>; and
+          (2) <strong>speech systems for assistants and multilingual / low-resource settings</strong>, spanning unified ASR + SER,
+          speech LLMs, expressive TTS evaluation, edge SER / KWS, and collaborations such as TaigiSpeech.
         </p>
         <p>
-          I also bring hands-on experience from Amazon Alexa, ITRI, and RealTek—working on speech and ML systems
-          from research through deployment. I’m motivated by building intelligent, expressive agents that integrate
-          speech, language, and emotion for natural real-world interaction.
+          I have worked on speech and ML systems from research through deployment at Amazon Alexa, ITRI, and RealTek.
+          I am motivated by building intelligent, expressive agents that integrate speech, language, and emotion for natural interaction.
         </p>
+
+        <dl class="meta-list">
+          <div>
+            <dt>Current</dt>
+            <dd>Postdoctoral Scholar (NSTC Fellow), USC SAIL, Oct 2025 – Present</dd>
+          </div>
+          <div>
+            <dt>Education</dt>
+            <dd>Ph.D., Electrical Engineering, NTHU, 2024; B.S., Electrical Engineering, NTHU</dd>
+          </div>
+          <div>
+            <dt>Contact</dt>
+            <dd><a href="mailto:huangchengchou@gmail.com">huangchengchou@gmail.com</a></dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section id="news" class="section news">
+      <div class="section-inner">
+        <h2>News</h2>
+        <ol class="news-list">
+          <li>Started as an NSTC Postdoctoral Fellow at USC SAIL with Prof. Shrikanth Narayanan.</li>
+          <li>
+            Our paper
+            <em>TaigiSpeech: A Low-Resource Real-World Speech Intent Dataset…</em>
+            (coauthor) is available on
+            <a href="https://arxiv.org/abs/2603.21478" target="_blank" rel="noopener">arXiv</a>
+            (INTERSPEECH 2026 long paper).
+          </li>
+          <li>
+            <em>DeSTA2.5-Audio</em> is published in
+            <a href="https://doi.org/10.1109/TASLPRO.2026.3675792" target="_blank" rel="noopener">IEEE TASLP 2026</a>.
+          </li>
+          <li>
+            <em>Do You Hear What I Mean?</em> (instruction–perception gap in expressive TTS) is accepted by
+            <a href="https://doi.org/10.1109/ICASSP55912.2026.11462935" target="_blank" rel="noopener">ICASSP 2026</a>.
+          </li>
+          <li>
+            First-author work on stimulus modality for SER at
+            <a href="https://doi.org/10.1109/ICASSP49660.2025.10890558" target="_blank" rel="noopener">ICASSP 2025</a>;
+            INTERSPEECH 2025 papers on SER fairness and Meta-PerSER.
+          </li>
+          <li>
+            Co-led
+            <a href="https://emosuperb.github.io/" target="_blank" rel="noopener">EMO-SUPERB / Open-Emotion</a>
+            (IEEE SLT 2024); <em>Minority Views Matter</em> in
+            <a href="https://doi.org/10.1109/TAFFC.2024.3411290" target="_blank" rel="noopener">IEEE TAFFC</a>.
+          </li>
+          <li>Received the NSTC Postdoctoral Research Abroad Fellowship (2025–2026).</li>
+          <li>Ph.D. dissertation on SER under subjectivity received the ACLCLP Doctoral Dissertation Award — Honorable Mention.</li>
+        </ol>
       </div>
     </section>
 
@@ -93,9 +167,9 @@
             <p>Shared-layer multitask modeling on Whisper; emotional-speech ASR analysis and two-stage fine-tuning for assistant workloads.</p>
           </article>
           <article>
-            <p class="feature-kicker">Fairness & robustness</p>
+            <p class="feature-kicker">Fairness &amp; robustness</p>
             <h3>Debiasing categorical SER</h3>
-            <p>Subgroup disparity mitigation, calibration, and large-scale bias evaluation without relying on fragile demographic shortcuts.</p>
+            <p>Subgroup disparity mitigation, calibration, and large-scale bias evaluation without fragile demographic shortcuts.</p>
           </article>
           <article>
             <p class="feature-kicker">On-device</p>
@@ -103,15 +177,101 @@
             <p>Streaming emotion sensing and model compression under FLOPs / MACs / parameter budgets (RealTek).</p>
           </article>
           <article>
-            <p class="feature-kicker">Generation & evaluation</p>
-            <h3>Expressive TTS & speech LLMs</h3>
+            <p class="feature-kicker">Generation &amp; evaluation</p>
+            <h3>Expressive TTS &amp; speech LLMs</h3>
             <p>Instruction–perception gaps in expressive TTS, emotion preservation under codecs, and SER with speech LLMs.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section experience">
+    <section id="pubs" class="section pubs">
+      <div class="section-inner">
+        <h2>Selected publications</h2>
+        <p class="section-lead">
+          Full list on
+          <a href="https://scholar.google.com/citations?user=_d7pcs4AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+          and in the
+          <a href="assets/Huang-Cheng_Chou_CV.pdf" target="_blank" rel="noopener">CV</a> appendix.
+          Name in <strong>bold</strong> indicates Huang-Cheng Chou.
+        </p>
+
+        <h3 class="pubs-subhead">Selected first-author</h3>
+        <ol class="pub-list">
+          <li>
+            <span class="pub-title">Minority Views Matter: Evaluating Speech Emotion Classifiers with Human Subjective Annotations by an All-Inclusive Aggregation Rule</span>
+            <span class="pub-authors"><strong>Huang-Cheng Chou</strong>, Lucas Goncalves, Seong-Gyun Leem, Ali N. Salman, Chi-Chun Lee, Carlos Busso</span>
+            <span class="pub-venue">IEEE Transactions on Affective Computing, 2024</span>
+            <span class="pub-links"><a href="https://doi.org/10.1109/TAFFC.2024.3411290" target="_blank" rel="noopener">DOI</a></span>
+          </li>
+          <li>
+            <span class="pub-title">Open-Emotion: A Reproducible EMO-Superb For Speech Emotion Recognition Systems</span>
+            <span class="pub-authors"><strong>Huang-Cheng Chou</strong>, Haibin Wu, Kai-Wei Chang, Lucas Goncalves, Jiawei Du, Jyh-Shing Roger Jang, Chi-Chun Lee, Hung-Yi Lee</span>
+            <span class="pub-venue">IEEE SLT 2024</span>
+            <span class="pub-links">
+              <a href="https://doi.org/10.1109/SLT61566.2024.10832296" target="_blank" rel="noopener">DOI</a>
+              · <a href="https://emosuperb.github.io/" target="_blank" rel="noopener">Project</a>
+            </span>
+          </li>
+          <li>
+            <span class="pub-title">Embracing Ambiguity And Subjectivity Using The All-Inclusive Aggregation Rule For Evaluating Multi-Label Speech Emotion Recognition Systems</span>
+            <span class="pub-authors"><strong>Huang-Cheng Chou</strong>, Lucas Goncalves, Haibin Wu, Hung-Yi Lee, Chi-Chun Lee</span>
+            <span class="pub-venue">IEEE SLT 2024</span>
+            <span class="pub-links"><a href="https://doi.org/10.1109/SLT61566.2024.10832302" target="_blank" rel="noopener">DOI</a></span>
+          </li>
+          <li>
+            <span class="pub-title">A Tiny Whisper-SER: Unifying Automatic Speech Recognition and Multi-label Speech Emotion Recognition Tasks</span>
+            <span class="pub-authors"><strong>Huang-Cheng Chou</strong></span>
+            <span class="pub-venue">APSIPA ASC 2024</span>
+            <span class="pub-links"><a href="https://doi.org/10.1109/APSIPAASC63619.2025.10848651" target="_blank" rel="noopener">DOI</a></span>
+          </li>
+          <li>
+            <span class="pub-title">Stimulus Modality Matters: Impact of Perceptual Evaluations from Different Modalities on Speech Emotion Recognition System Performance</span>
+            <span class="pub-authors"><strong>Huang-Cheng Chou</strong>, Haibin Wu, Chi-Chun Lee</span>
+            <span class="pub-venue">ICASSP 2025</span>
+            <span class="pub-links"><a href="https://doi.org/10.1109/ICASSP49660.2025.10890558" target="_blank" rel="noopener">DOI</a></span>
+          </li>
+          <li>
+            <span class="pub-title">The Importance of Calibration: Rethinking Confidence and Performance of Speech Multi-label Emotion Classifiers</span>
+            <span class="pub-authors"><strong>Huang-Cheng Chou</strong>, Lucas Goncalves, Seong-Gyun Leem, Chi-Chun Lee, Carlos Busso</span>
+            <span class="pub-venue">INTERSPEECH 2023</span>
+            <span class="pub-links"><a href="https://doi.org/10.21437/Interspeech.2023-1113" target="_blank" rel="noopener">DOI</a></span>
+          </li>
+          <li>
+            <span class="pub-title">Every Rating Matters: Joint Learning of Subjective Labels and Individual Annotators for Speech Emotion Classification</span>
+            <span class="pub-authors"><strong>Huang-Cheng Chou</strong>, Chi-Chun Lee</span>
+            <span class="pub-venue">ICASSP 2019</span>
+            <span class="pub-links"><a href="https://doi.org/10.1109/ICASSP.2019.8682170" target="_blank" rel="noopener">DOI</a></span>
+          </li>
+        </ol>
+
+        <h3 class="pubs-subhead">Selected collaborative</h3>
+        <ol class="pub-list pub-list-continued">
+          <li>
+            <span class="pub-title">DeSTA2.5-Audio: Toward General-Purpose Large Audio Language Model With Self-Generated Cross-Modal Alignment</span>
+            <span class="pub-authors">Ke-Han Lu, …, <strong>Huang-Cheng Chou</strong>, …, Hung-yi Lee</span>
+            <span class="pub-venue">IEEE TASLP 2026</span>
+            <span class="pub-links"><a href="https://doi.org/10.1109/TASLPRO.2026.3675792" target="_blank" rel="noopener">DOI</a></span>
+          </li>
+          <li>
+            <span class="pub-title">TaigiSpeech: A Low-Resource Real-World Speech Intent Dataset and Preliminary Results with Scalable Data Mining In-the-Wild</span>
+            <span class="pub-authors">Kai-Wei Chang, Yi-Cheng Lin, <strong>Huang-Cheng Chou</strong>, …, Hung-yi Lee</span>
+            <span class="pub-venue">INTERSPEECH 2026 (long), arXiv</span>
+            <span class="pub-links"><a href="https://arxiv.org/abs/2603.21478" target="_blank" rel="noopener">arXiv</a></span>
+          </li>
+          <li>
+            <span class="pub-title">Do You Hear What I Mean? Quantifying the Instruction-Perception Gap in Instruction-Guided Expressive Text-to-Speech Systems</span>
+            <span class="pub-authors">Yi-Cheng Lin, <strong>Huang-Cheng Chou</strong>, Tzu-Chieh Wei, Kuan-Yu Chen, Hung-Yi Lee</span>
+            <span class="pub-venue">ICASSP 2026</span>
+            <span class="pub-links"><a href="https://doi.org/10.1109/ICASSP55912.2026.11462935" target="_blank" rel="noopener">DOI</a></span>
+          </li>
+        </ol>
+
+        <a class="text-link" href="https://scholar.google.com/citations?user=_d7pcs4AAAAJ&amp;hl=en" target="_blank" rel="noopener">See all on Google Scholar →</a>
+      </div>
+    </section>
+
+    <section id="experience" class="section experience">
       <div class="section-inner">
         <h2>Experience</h2>
         <ul class="timeline">
@@ -119,7 +279,7 @@
             <span class="when">2025 – Present</span>
             <div>
               <strong>Postdoctoral Scholar (NSTC Fellow)</strong>
-              <span>USC SAIL &middot; Prof. Shrikanth Narayanan</span>
+              <span>USC SAIL · Prof. Shrikanth Narayanan</span>
             </div>
           </li>
           <li>
@@ -154,39 +314,6 @@
       </div>
     </section>
 
-    <section id="pubs" class="section pubs">
-      <div class="section-inner">
-        <h2>Publications</h2>
-        <p class="section-lead">
-          First-author venues include INTERSPEECH, ICASSP, SLT, and IEEE Transactions on Affective Computing.
-          Full list on Scholar and in the CV appendix.
-        </p>
-        <ul class="pub-list">
-          <li>
-            <span class="venue">IEEE TAFFC</span>
-            Minority Views Matter: Evaluating Speech Emotion Classifiers with Human Subjective Annotations…
-          </li>
-          <li>
-            <span class="venue">IEEE SLT</span>
-            Open-Emotion: A Reproducible EMO-SUPERB for Speech Emotion Recognition Systems
-          </li>
-          <li>
-            <span class="venue">APSIPA ASC</span>
-            A Tiny Whisper-SER: Unifying ASR and Multi-label Speech Emotion Recognition
-          </li>
-          <li>
-            <span class="venue">IEEE TASLP</span>
-            DeSTA2.5-Audio: Toward General-Purpose Large Audio Language Model…
-          </li>
-          <li>
-            <span class="venue">ICASSP / INTERSPEECH / ASRU</span>
-            Fairness, calibration, multilingual SER, expressive TTS evaluation, and spoken-dialogue emotion reasoning
-          </li>
-        </ul>
-        <a class="text-link" href="https://scholar.google.com/citations?user=_d7pcs4AAAAJ&hl=en" target="_blank" rel="noopener">See all on Google Scholar →</a>
-      </div>
-    </section>
-
     <section id="contact" class="section contact">
       <div class="section-inner">
         <h2>Contact</h2>
@@ -195,9 +322,10 @@
           <a href="mailto:huangchengchou@gmail.com">huangchengchou@gmail.com</a>
         </p>
         <div class="socials">
+          <a href="assets/Huang-Cheng_Chou_CV.pdf" target="_blank" rel="noopener">CV</a>
           <a href="https://github.com/ag027592" target="_blank" rel="noopener">GitHub</a>
           <a href="https://www.linkedin.com/in/huangchougchou/" target="_blank" rel="noopener">LinkedIn</a>
-          <a href="https://scholar.google.com/citations?user=_d7pcs4AAAAJ&hl=en" target="_blank" rel="noopener">Scholar</a>
+          <a href="https://scholar.google.com/citations?user=_d7pcs4AAAAJ&amp;hl=en" target="_blank" rel="noopener">Scholar</a>
           <a href="https://sail.usc.edu/" target="_blank" rel="noopener">SAIL Lab</a>
         </div>
       </div>
@@ -205,7 +333,7 @@
   </main>
 
   <footer class="site-footer">
-    <p>© <span id="year"></span> Huang-Cheng Chou</p>
+    <p>© <span id="year"></span> Huang-Cheng Chou · <a href="https://huangchengchou.com">huangchengchou.com</a></p>
   </footer>
 
   <script src="main.js"></script>

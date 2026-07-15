@@ -2,7 +2,7 @@
   const year = document.getElementById("year");
   if (year) year.textContent = String(new Date().getFullYear());
 
-  // Waveform / spectrum visual for speech identity
+  // Quieter waveform / spectrum — speech identity without overpowering photo
   const canvas = document.getElementById("wave");
   if (canvas && canvas.getContext) {
     const ctx = canvas.getContext("2d");
@@ -23,34 +23,33 @@
 
     const draw = () => {
       ctx.clearRect(0, 0, w, h);
-      const bands = 56;
+      const bands = 48;
       const gap = w / bands;
       for (let i = 0; i < bands; i++) {
         const n =
-          0.35 +
-          0.28 * Math.sin(t * 0.9 + i * 0.33) +
-          0.22 * Math.sin(t * 1.7 + i * 0.11) +
-          0.15 * Math.sin(t * 0.35 + i * 0.55);
-        const bh = Math.max(8, n * h * 0.55);
-        const x = i * gap + gap * 0.2;
-        const y = h * 0.58 - bh * 0.5;
+          0.28 +
+          0.22 * Math.sin(t * 0.75 + i * 0.33) +
+          0.16 * Math.sin(t * 1.4 + i * 0.11) +
+          0.1 * Math.sin(t * 0.28 + i * 0.55);
+        const bh = Math.max(6, n * h * 0.42);
+        const x = i * gap + gap * 0.22;
+        const y = h * 0.62 - bh * 0.5;
         const grad = ctx.createLinearGradient(0, y, 0, y + bh);
-        grad.addColorStop(0, "rgba(62, 198, 176, 0.55)");
-        grad.addColorStop(1, "rgba(217, 166, 106, 0.08)");
+        grad.addColorStop(0, "rgba(62, 198, 176, 0.32)");
+        grad.addColorStop(1, "rgba(217, 166, 106, 0.04)");
         ctx.fillStyle = grad;
-        ctx.fillRect(x, y, gap * 0.55, bh);
+        ctx.fillRect(x, y, gap * 0.5, bh);
       }
 
-      // faint spectrogram-like trails
-      ctx.globalAlpha = 0.15;
-      for (let row = 0; row < 8; row++) {
-        const yy = h * 0.18 + row * (h * 0.07);
+      ctx.globalAlpha = 0.1;
+      for (let row = 0; row < 6; row++) {
+        const yy = h * 0.2 + row * (h * 0.075);
         ctx.beginPath();
-        for (let x = 0; x <= w; x += 8) {
+        for (let x = 0; x <= w; x += 10) {
           const yy2 =
             yy +
-            Math.sin(x * 0.01 + t * 0.8 + row) * 10 +
-            Math.sin(x * 0.003 - t * 0.4) * 6;
+            Math.sin(x * 0.009 + t * 0.65 + row) * 8 +
+            Math.sin(x * 0.0025 - t * 0.35) * 5;
           if (x === 0) ctx.moveTo(x, yy2);
           else ctx.lineTo(x, yy2);
         }
@@ -61,7 +60,7 @@
       ctx.globalAlpha = 1;
 
       if (!reduceMotion) {
-        t += 0.016;
+        t += 0.012;
         raf = requestAnimationFrame(draw);
       }
     };
@@ -75,7 +74,7 @@
     window.addEventListener("beforeunload", () => cancelAnimationFrame(raf));
   }
 
-  // Scroll reveal
+  // Scroll reveal for content sections
   const items = document.querySelectorAll(".section");
   items.forEach((el) => el.classList.add("reveal"));
   if ("IntersectionObserver" in window) {
@@ -85,7 +84,7 @@
           if (e.isIntersecting) e.target.classList.add("visible");
         });
       },
-      { threshold: 0.12 }
+      { threshold: 0.1 }
     );
     items.forEach((el) => io.observe(el));
   } else {
