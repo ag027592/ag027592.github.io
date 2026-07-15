@@ -25,8 +25,9 @@
     <nav class="nav" aria-label="Primary">
       <a href="#about">About</a>
       <a href="#news">News</a>
-      <a href="#work">Work</a>
+      <a href="#projects">Projects</a>
       <a href="#pubs">Publications</a>
+      <a href="#awards">Awards</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -80,10 +81,12 @@
           I received my Ph.D. in Electrical Engineering from National Tsing Hua University, advised by Prof. Chi-Chun Lee.
         </p>
         <p>
-          My research has two main threads: (1) <strong>speech emotion recognition under subjectivity and ambiguity</strong>,
-          including multi-label learning, annotator disagreement, calibration, fairness, and open evaluation through
-          <a href="https://emosuperb.github.io/" target="_blank" rel="noopener">EMO-SUPERB</a>; and
-          (2) <strong>speech systems for assistants and multilingual / low-resource settings</strong>, spanning unified ASR + SER,
+          My research centers on three threads: (1) <strong>speech emotion recognition under subjectivity and ambiguity</strong>—
+          multi-label learning, annotator disagreement, calibration, fairness, and open evaluation via
+          <a href="https://emosuperb.github.io/" target="_blank" rel="noopener">EMO-SUPERB</a>;
+          (2) <strong>conversational social signal processing</strong>—deception and belongingness in dialogue / small groups,
+          and dyadic clinical affect such as depression-related speech; and
+          (3) <strong>speech systems for assistants and multilingual / low-resource settings</strong>—unified ASR + SER,
           speech LLMs, expressive TTS evaluation, edge SER / KWS, and collaborations such as TaigiSpeech.
         </p>
         <p>
@@ -112,6 +115,16 @@
       <div class="section-inner">
         <h2>News</h2>
         <ol class="news-list">
+          <li>
+            Preparing a first-author journal draft on
+            <em>speech enhancement for real-time MRI (rtMRI) speech</em>
+            (multi-task benchmark + open resource; targeting submission by end of month).
+          </li>
+          <li>
+            Updating <em>VoxEmo</em>, a reproducibility toolkit for speech-LLM SER
+            (mentored;
+            <a href="https://arxiv.org/abs/2603.08936" target="_blank" rel="noopener">arXiv</a>).
+          </li>
           <li>Started as an NSTC Postdoctoral Fellow at USC SAIL with Prof. Shrikanth Narayanan.</li>
           <li>
             Our paper
@@ -145,41 +158,116 @@
       </div>
     </section>
 
-    <section id="work" class="section work">
+    <section id="projects" class="section projects">
       <div class="section-inner">
-        <h2>Selected work</h2>
-        <p class="section-lead">Benchmarks, assistant-side ASR–SER, and fairness for speech systems.</p>
+        <h2>Projects</h2>
+        <p class="section-lead">
+          Grouped by research theme. Selected papers under each; full list on Scholar and in the CV.
+        </p>
 
-        <article class="feature">
-          <p class="feature-kicker">Open benchmark</p>
-          <h3><a href="https://emosuperb.github.io/" target="_blank" rel="noopener">EMO-SUPERB</a></h3>
-          <p>
-            Community-driven speech emotion recognition benchmark and leaderboard: standardized splits,
-            reproducible evaluation across SSL models and corpora, and open tooling for Open-Emotion (IEEE SLT 2024).
-          </p>
-          <a class="text-link" href="https://github.com/EMOsuperb/EMO-SUPERB-submission" target="_blank" rel="noopener">Codebase →</a>
-        </article>
+        <div class="project-list">
+          <article class="project">
+            <p class="feature-kicker">Theme</p>
+            <h3>Subjective &amp; ambiguous SER</h3>
+            <p>
+              Modeling annotator disagreement, minority views, soft labels, and calibration so SER systems
+              respect emotion ambiguity rather than collapsing to a single “ground truth.”
+            </p>
+            <ul class="project-pubs">
+              <li><a href="https://doi.org/10.1109/TAFFC.2024.3411290" target="_blank" rel="noopener">Minority Views Matter</a> — IEEE TAFFC</li>
+              <li><a href="https://doi.org/10.1109/SLT61566.2024.10832302" target="_blank" rel="noopener">All-Inclusive Aggregation</a> — IEEE SLT 2024</li>
+              <li><a href="https://doi.org/10.21437/Interspeech.2023-1113" target="_blank" rel="noopener">Calibration for multi-label SER</a> — INTERSPEECH 2023</li>
+              <li><a href="https://doi.org/10.1109/ICASSP.2019.8682170" target="_blank" rel="noopener">Every Rating Matters</a> — ICASSP 2019</li>
+            </ul>
+          </article>
 
-        <div class="work-grid">
-          <article>
-            <p class="feature-kicker">Amazon Alexa</p>
-            <h3>ASR + multi-label SER</h3>
-            <p>Shared-layer multitask modeling on Whisper; emotional-speech ASR analysis and two-stage fine-tuning for assistant workloads.</p>
+          <article class="project">
+            <p class="feature-kicker">Theme</p>
+            <h3>Conversational social signals</h3>
+            <p>
+              Affect and social meaning in dialogue: deception and perceived lying in interactive games,
+              belongingness / satisfaction in small-group conversation, multimodal group emotion,
+              and dyadic depression-related speech (including mentored work).
+            </p>
+            <ul class="project-pubs">
+              <li><a href="https://aclanthology.org/2021.findings-acl.162" target="_blank" rel="noopener">Deception + interlocutor judgments</a> — ACL Findings 2021</li>
+              <li><a href="https://doi.org/10.1017/ATSIP.2021.6" target="_blank" rel="noopener">Automatic deception detection in dialogs</a> — APSIPA TSIP</li>
+              <li><a href="https://doi.org/10.1109/APSIPAASC47483.2019.9023050" target="_blank" rel="noopener">Conversational temporal dynamics for deception</a> — APSIPA ASC 2019</li>
+              <li><a href="https://doi.org/10.1145/3461615.3485410" target="_blank" rel="noopener">Belongingness from physiological synchrony</a> — ICMI 2021</li>
+              <li><a href="https://arxiv.org/abs/2607.02904" target="_blank" rel="noopener">Depression in dyadic interaction</a> — mentored (arXiv)</li>
+              <li><a href="https://doi.org/10.1109/ACII.2017.8273615" target="_blank" rel="noopener">NNIME interactive multimodal corpus</a> — ACII 2017</li>
+            </ul>
           </article>
-          <article>
-            <p class="feature-kicker">Fairness &amp; robustness</p>
-            <h3>Debiasing categorical SER</h3>
-            <p>Subgroup disparity mitigation, calibration, and large-scale bias evaluation without fragile demographic shortcuts.</p>
+
+          <article class="project">
+            <p class="feature-kicker">Theme</p>
+            <h3>Fairness &amp; robust SER</h3>
+            <p>
+              Subgroup disparity, debiasing without fragile demographic shortcuts, and confidence-oriented
+              augmentation for fairer multi-label emotion recognition.
+            </p>
+            <ul class="project-pubs">
+              <li><a href="https://doi.org/10.21437/Interspeech.2024-1073" target="_blank" rel="noopener">Emo-bias</a> — INTERSPEECH 2024</li>
+              <li>Mitigating subgroup disparities — INTERSPEECH 2025</li>
+              <li><a href="https://doi.org/10.1109/ASRU65441.2025.11433837" target="_blank" rel="noopener">EMO-Debias</a> — ASRU 2025</li>
+              <li><a href="https://doi.org/10.1109/ASRU65441.2025.11434684" target="_blank" rel="noopener">CO-VADA</a> — ASRU 2025</li>
+            </ul>
           </article>
-          <article>
-            <p class="feature-kicker">On-device</p>
-            <h3>Edge SER / KWS</h3>
-            <p>Streaming emotion sensing and model compression under FLOPs / MACs / parameter budgets (RealTek).</p>
+
+          <article class="project">
+            <p class="feature-kicker">Open evaluation</p>
+            <h3>Benchmarks &amp; toolkits</h3>
+            <p>
+              Reproducible evaluation contracts for classical and speech-LLM SER: splits, metrics, prompts,
+              parsing, and diagnostics so results stay auditable.
+            </p>
+            <ul class="project-pubs">
+              <li><a href="https://emosuperb.github.io/" target="_blank" rel="noopener">EMO-SUPERB / Open-Emotion</a> — IEEE SLT 2024</li>
+              <li><a href="https://github.com/EMOsuperb/EMO-SUPERB-submission" target="_blank" rel="noopener">EMO-SUPERB codebase</a></li>
+              <li><a href="https://arxiv.org/abs/2603.08936" target="_blank" rel="noopener">VoxEmo</a> — speech-LLM SER toolkit (mentored)</li>
+              <li><a href="https://doi.org/10.1109/ASRU65441.2025.11434762" target="_blank" rel="noopener">EMO-Reasoning</a> — ASRU 2025</li>
+            </ul>
           </article>
-          <article>
-            <p class="feature-kicker">Generation &amp; evaluation</p>
-            <h3>Expressive TTS &amp; speech LLMs</h3>
-            <p>Instruction–perception gaps in expressive TTS, emotion preservation under codecs, and SER with speech LLMs.</p>
+
+          <article class="project">
+            <p class="feature-kicker">Theme</p>
+            <h3>Assistant speech systems</h3>
+            <p>
+              Unified ASR + multi-label SER for voice-assistant workloads, emotional-speech ASR analysis,
+              stimulus-modality effects, and on-device SER / KWS under compute budgets.
+            </p>
+            <ul class="project-pubs">
+              <li><a href="https://doi.org/10.1109/APSIPAASC63619.2025.10848651" target="_blank" rel="noopener">A Tiny Whisper-SER</a> — APSIPA ASC 2024</li>
+              <li>Amazon Alexa Applied Scientist Intern — shared-layer ASR + SER on Whisper</li>
+              <li><a href="https://doi.org/10.1109/ICASSP49660.2025.10890558" target="_blank" rel="noopener">Stimulus modality matters</a> — ICASSP 2025</li>
+              <li>RealTek internship — streaming edge SER / KWS compression</li>
+            </ul>
+          </article>
+
+          <article class="project">
+            <p class="feature-kicker">Theme</p>
+            <h3>Speech LLMs, generation &amp; low-resource</h3>
+            <p>
+              Large audio / speech language models, expressive TTS evaluation, codec emotion preservation,
+              and low-resource speech resources such as TaigiSpeech.
+            </p>
+            <ul class="project-pubs">
+              <li><a href="https://doi.org/10.1109/TASLPRO.2026.3675792" target="_blank" rel="noopener">DeSTA2.5-Audio</a> — IEEE TASLP 2026</li>
+              <li><a href="https://arxiv.org/abs/2603.21478" target="_blank" rel="noopener">TaigiSpeech</a> — INTERSPEECH 2026</li>
+              <li><a href="https://doi.org/10.1109/ICASSP55912.2026.11462935" target="_blank" rel="noopener">Instruction–perception gap in TTS</a> — ICASSP 2026</li>
+              <li><a href="https://doi.org/10.1109/APSIPAASC63619.2025.10849259" target="_blank" rel="noopener">EMO-Codec</a> — APSIPA ASC 2024</li>
+            </ul>
+          </article>
+
+          <article class="project project-wide">
+            <p class="feature-kicker">In progress</p>
+            <h3>rtMRI speech enhancement</h3>
+            <p>
+              First-author work evaluating modern speech enhancement on real-time MRI speech:
+              multi-task downstream benchmark (ASR, speaker, SER, demographics), practical guidance,
+              and an open resource—targeting journal submission (JASA-style) by end of month.
+              PDF not posted until preprint / acceptance.
+            </p>
           </article>
         </div>
       </div>
@@ -265,6 +353,12 @@
             <span class="pub-venue">ICASSP 2026</span>
             <span class="pub-links"><a href="https://doi.org/10.1109/ICASSP55912.2026.11462935" target="_blank" rel="noopener">DOI</a></span>
           </li>
+          <li>
+            <span class="pub-title">VoxEmo: A Reproducible Toolkit for Speech Emotion Recognition with Speech LLMs</span>
+            <span class="pub-authors">Hezhao Zhang, <strong>Huang-Cheng Chou</strong>, Shrikanth Narayanan, Thomas Hain</span>
+            <span class="pub-venue">arXiv (mentored)</span>
+            <span class="pub-links"><a href="https://arxiv.org/abs/2603.08936" target="_blank" rel="noopener">arXiv</a></span>
+          </li>
         </ol>
 
         <a class="text-link" href="https://scholar.google.com/citations?user=_d7pcs4AAAAJ&amp;hl=en" target="_blank" rel="noopener">See all on Google Scholar →</a>
@@ -311,6 +405,20 @@
             </div>
           </li>
         </ul>
+      </div>
+    </section>
+
+    <section id="awards" class="section awards">
+      <div class="section-inner">
+        <h2>Selected awards</h2>
+        <ul class="award-list">
+          <li><strong>NSTC Postdoctoral Research Abroad Fellowship</strong> — 2025–2026</li>
+          <li><strong>ACLCLP Doctoral Dissertation Award</strong> — Honorable Mention</li>
+          <li><strong>Merry Electronics Master’s / Ph.D. Thesis Award</strong> — Silver (2025), Bronze (2021)</li>
+          <li><strong>APSIPA ASC Best Paper Award</strong> — 2019</li>
+          <li><strong>NOVATEK Ph.D. Scholarship</strong></li>
+        </ul>
+        <p class="section-note">Travel grants and reviewing service are listed in the CV.</p>
       </div>
     </section>
 
