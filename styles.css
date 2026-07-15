@@ -219,14 +219,15 @@ a:hover {
   display: block;
   width: 100%;
   height: auto;
-  aspect-ratio: 3 / 3.85;
-  object-fit: cover;
-  object-position: center 18%;
+  max-height: min(72vh, 36rem);
+  object-fit: contain;
+  object-position: center top;
   border-radius: 0.35rem;
   box-shadow:
     0 0 0 1px rgba(232, 238, 244, 0.1),
     0 28px 60px rgba(0, 0, 0, 0.45);
   filter: saturate(0.92) contrast(1.04);
+  background: rgba(20, 27, 36, 0.55);
 }
 
 .hero-scroll {
