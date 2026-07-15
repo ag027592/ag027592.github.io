@@ -560,6 +560,49 @@ a:hover {
   font-weight: 700;
 }
 
+.project-fig {
+  margin: 0.55rem 0 0.85rem;
+}
+
+.project-fig img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 16rem;
+  object-fit: contain;
+  object-position: left center;
+  border-radius: 0.3rem;
+  background: #f4f6f8;
+  box-shadow: 0 0 0 1px rgba(232, 238, 244, 0.08);
+}
+
+.project-fig figcaption {
+  margin-top: 0.45rem;
+  font-family: var(--display);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+  line-height: 1.4;
+}
+
+.project-wide .project-fig img {
+  max-height: 14rem;
+}
+
+.timeline .role {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+}
+
+.org-logo {
+  width: 2.75rem;
+  height: 2.75rem;
+  flex-shrink: 0;
+  border-radius: 0.55rem;
+}
+
 .timeline {
   list-style: none;
   margin: 1.25rem 0 0;
