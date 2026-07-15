@@ -6,3 +6,7 @@ Thumbs.db
 Picture/
 ngrok-website.yml
 *.bat
+assets/flows/_cand/
+_export_assets.py
+CLOUDFLARE_DNS.md
+NGROK.md
