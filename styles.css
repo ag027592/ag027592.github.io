@@ -604,14 +604,14 @@ a:hover {
 }
 
 .org-logo {
-  width: 3.1rem;
-  height: 3.1rem;
+  width: 4.25rem;
+  height: 4.25rem;
   flex-shrink: 0;
   object-fit: contain;
-  border-radius: 0.5rem;
-  padding: 0.2rem;
+  border-radius: 0.55rem;
+  padding: 0.28rem;
   box-sizing: border-box;
-  border: 1px solid var(--line);
+  border: 1px solid rgba(232, 238, 244, 0.16);
 }
 
 .org-logo--light {
@@ -619,7 +619,7 @@ a:hover {
 }
 
 .org-logo--dark {
-  background: #0c0c0e;
+  background: #ffffff;
 }
 
 .timeline {
