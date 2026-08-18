@@ -821,6 +821,13 @@ a:hover {
   padding: 7.25rem clamp(1rem, 4vw, 2.5rem) 2.25rem;
 }
 
+.page-cv .hero-content {
+  animation: none;
+  opacity: 1;
+  transform: none;
+  max-width: 46rem;
+}
+
 .page-cv .cv-hero .hero-layout {
   grid-template-columns: 1fr;
 }
@@ -1019,6 +1026,12 @@ a:hover {
   border-radius: 0.35rem;
   padding: 0.28rem 0.65rem;
   cursor: pointer;
+  text-decoration: none;
+}
+
+a.cv-print {
+  display: inline-block;
+  color: var(--muted);
 }
 
 .cv-print:hover {
@@ -1027,34 +1040,159 @@ a:hover {
 }
 
 @media print {
+  @page {
+    size: Letter;
+    margin: 0.55in 0.6in 0.65in;
+  }
+
   .noise,
   .site-header,
   .cv-print,
   .cv-toc,
-  .site-footer {
+  .site-footer,
+  .hero-scroll {
     display: none !important;
   }
 
+  html,
   body {
-    background: #fff;
-    color: #111;
-    font-size: 11pt;
+    background: #fff !important;
+    color: #111 !important;
+    font-size: 10.2pt;
+    line-height: 1.42;
+  }
+
+  .reveal,
+  .reveal.visible {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .hero-content,
+  .hero-photo {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .eyebrow,
+  .lede,
+  .brand-zh,
+  .link-row a,
+  .link-row span {
+    color: #111 !important;
+  }
+
+  .brand {
+    font-size: 26pt !important;
+    line-height: 1.05 !important;
+  }
+
+  .hero,
+  .page-cv .cv-hero {
+    min-height: 0 !important;
+    padding: 0 0 0.45rem !important;
+    overflow: visible !important;
+  }
+
+  .page-cv .section,
+  .section {
+    padding: 0.42rem 0 !important;
+    border-top: 1px solid #cfcfcf;
+  }
+
+  .section h2,
+  .pubs-subhead,
+  .cv-job-head h3,
+  .brand,
+  .brand-zh,
+  .lede,
+  .about p,
+  .about strong,
+  .section-lead,
+  .cv-metrics,
+  .cv-metrics strong,
+  .cv-note,
+  .cv-job-org,
+  .cv-when,
+  .cv-where,
+  .cv-bullets li,
+  .award-list li,
+  .award-list strong,
+  .pub-title,
+  .pub-authors,
+  .pub-authors strong,
+  .pub-venue,
+  .skill-grid dt,
+  .skill-grid dd,
+  .resource-list li,
+  .contact-email a {
+    color: #111 !important;
+  }
+
+  .section h2 {
+    font-size: 13.5pt !important;
+    margin: 0 0 0.3rem !important;
+  }
+
+  .pubs-subhead {
+    color: #333 !important;
+    margin: 0.7rem 0 0.2rem !important;
   }
 
   a {
-    color: #111;
+    color: #0a4a7a;
     text-decoration: underline;
   }
 
-  .page-cv .cv-hero,
-  .page-cv .section {
-    padding: 0.6rem 0;
+  .pub-title a {
+    color: #111 !important;
+    text-decoration: none;
   }
 
-  .cv-job-head h3,
-  .pub-title,
-  .brand {
-    color: #111;
+  .cv-job,
+  .pub-list li,
+  .cv-note,
+  .award-list li,
+  .resource-list li {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  h2,
+  h3,
+  .pubs-subhead {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  .cv-note {
+    background: #f4f4f4 !important;
+    border-color: #ccc !important;
+    border-left-color: #333 !important;
+  }
+
+  .cv-bullets li::before,
+  .pub-list li::before {
+    color: #333 !important;
+  }
+
+  .role-tag {
+    color: #333 !important;
+    border-color: #bbb;
+  }
+
+  .cv-job,
+  .award-list li,
+  .resource-list li,
+  .pub-list li {
+    border-top-color: #d5d5d5;
+  }
+
+  .socials a {
+    color: #0a4a7a;
   }
 }
 

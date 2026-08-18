@@ -20,9 +20,9 @@ Then visit http://localhost:8080
 |------|------|
 | `index.html` | Home: research themes, selected publications, compact experience |
 | `cv.html` | Full academic CV (appointments, awards, service, complete publication list) |
+| `assets/Huang-Cheng_Chou_CV.pdf` | Printable CV for sharing with recruiters; generated from `cv.html` |
 | `styles.css` | Layout and visual system |
 | `main.js` | Waveform hero animation and scroll reveals |
-| `assets/Huang-Cheng_Chou_CV.pdf` | Legacy PDF; the HTML CV is the complete version |
 | `CNAME` | Custom domain mapping for GitHub Pages |
 
 ## Deployment
