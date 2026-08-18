@@ -910,6 +910,10 @@ a:hover {
   font-size: 1rem;
 }
 
+.cv-job-org a {
+  color: var(--accent);
+}
+
 .cv-when {
   font-family: var(--display);
   font-size: 0.82rem;
@@ -1039,6 +1043,7 @@ a:hover {
 
   a {
     color: #111;
+    text-decoration: underline;
   }
 
   .page-cv .cv-hero,
