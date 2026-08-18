@@ -170,7 +170,22 @@ a:hover {
   font-size: clamp(1rem, 2.2vw, 1.25rem);
   letter-spacing: 0.28em;
   color: var(--muted);
-  margin: 0.45rem 0 1rem;
+  margin: 0.45rem 0 0.65rem;
+}
+
+.open-role {
+  display: inline-block;
+  margin: 0 0 1rem;
+  padding: 0.28rem 0.75rem;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  background: var(--accent-dim);
+  font-family: var(--display);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
 }
 
 .lede {
@@ -1080,9 +1095,15 @@ a.cv-print {
   .eyebrow,
   .lede,
   .brand-zh,
+  .open-role,
   .link-row a,
   .link-row span {
     color: #111 !important;
+  }
+
+  .open-role {
+    border-color: #111 !important;
+    background: #f4f4f4 !important;
   }
 
   .brand {
