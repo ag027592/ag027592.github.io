@@ -2,7 +2,7 @@
 
 Source for [huangchengchou.com](https://huangchengchou.com), a static site with no build step or dependencies.
 
-Covers research themes, selected publications, experience, and awards for speech emotion recognition, speech LLMs, and subjective evaluation work at USC SAIL.
+Covers research themes, a full academic CV, selected publications, experience, and awards for speech emotion recognition, speech LLMs, and subjective evaluation work at USC SAIL.
 
 ## Local preview
 
@@ -18,10 +18,11 @@ Then visit http://localhost:8080
 
 | File | Role |
 |------|------|
-| `index.html` | Page structure and copy |
+| `index.html` | Home: research themes, selected publications, compact experience |
+| `cv.html` | Full academic CV (appointments, awards, service, complete publication list) |
 | `styles.css` | Layout and visual system |
 | `main.js` | Waveform hero animation and scroll reveals |
-| `assets/Huang-Cheng_Chou_CV.pdf` | CV download, update when the resume changes |
+| `assets/Huang-Cheng_Chou_CV.pdf` | Legacy PDF; the HTML CV is the complete version |
 | `CNAME` | Custom domain mapping for GitHub Pages |
 
 ## Deployment

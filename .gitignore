@@ -10,6 +10,7 @@ ngrok-website.yml
 assets/flows/_cand/
 _export_assets.py
 _prep_logos.py
+_build_cv.py
 CLOUDFLARE_DNS.md
 NGROK.md
 assets/logos/*-src.*
